@@ -1,0 +1,159 @@
+/* -------------------------
+    Base Styling & Reset
+-------------------------- */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #212529;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* -------------------------
+    Container Card Style
+-------------------------- */
+.custom-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.custom-container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* -------------------------
+    Navbar Styles
+-------------------------- */
+.custom-navbar {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-navbar .nav-link {
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-navbar .nav-item.active .nav-link,
+.custom-navbar .nav-link:hover {
+    color: #ffc107;
+}
+
+/* -------------------------
+    Headings & Typography
+-------------------------- */
+h1, h2, h3, h4, h5 {
+    color: #1c1c1c;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    color: #0056b3;
+}
+
+/* -------------------------
+    Table Styling
+-------------------------- */
+.table-responsive {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.table {
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.table th {
+    background-color: #2a5298;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* -------------------------
+    Form Styling
+-------------------------- */
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    transition: box-shadow 0.2s;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    border-color: #80bdff;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+/* -------------------------
+    Buttons
+-------------------------- */
+.btn-primary {
+    background-color: #2a5298;
+    border-color: #2a5298;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #1e3c72;
+    border-color: #1e3c72;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(42, 82, 152, 0.5);
+}
+
+/* -------------------------
+    Footer (optional)
+-------------------------- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* -------------------------
+    Media Queries
+-------------------------- */
+@media (max-width: 768px) {
+    .custom-container {
+        padding: 1.5rem;
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 1rem;
+    }
+}

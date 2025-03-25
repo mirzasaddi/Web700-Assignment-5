@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>WEB700 - Mirza Mohammad Ullah Sadi</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <!-- Custom Theme CSS -->
+    <link rel="stylesheet" href="/css/theme.css" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+        <a class="navbar-brand" href="/about">
+            <img src="/images/Mirza_Sadi.jpg" width="40" height="40" class="d-inline-block align-top rounded-circle" alt="Profile Image" />
+            <strong>Mirza Mohammad Ullah Sadi</strong>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <%- navLink("/", { fn: () => "Home" }) %>
+                <%- navLink("/about", { fn: () => "About" }) %>
+                <%- navLink("/htmlDemo", { fn: () => "HTML Demo" }) %>
+                <%- navLink("/students/add", { fn: () => "Add Student" }) %>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <%- navLink("/students", { fn: () => "Students" }) %>
+                <%- navLink("/courses", { fn: () => "Courses" }) %>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Page Content -->
+    <div class="container custom-container mt-4">
+        <%- body %>
+    </div>
+
+    <!-- JavaScript & Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
