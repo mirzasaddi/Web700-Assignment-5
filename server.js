@@ -83,6 +83,7 @@ app.post("/students/add", (req, res) => {
 });
 
 app.get("/students", (req, res) => {
+    console.log("🔍 Students route triggered!");
     if (req.query.course) {
         collegeData.getStudentsByCourse(req.query.course)
             .then((students) => res.render("students", { students }))
