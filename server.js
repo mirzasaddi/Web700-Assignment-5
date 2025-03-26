@@ -90,7 +90,7 @@ app.get("/students", (req, res) => {
     } else {
         collegeData.getAllStudents()
             .then((students) => res.render("students", { students }))
-            .catch(() => res.render("students", { message: "no results" }));
+            .catch(() => res.render("students", { message: "no results found" }));
     }
 });
 
