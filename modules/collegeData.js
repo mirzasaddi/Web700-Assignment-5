@@ -17,9 +17,6 @@ module.exports.initialize = function () {
                 reject("unable to load courses"); return;
             }
 
-            const studentsPath = './data/students.json';
-            console.log("Attempting to read:", studentsPath); // Added for debugging
-
             fs.readFile(studentsPath, 'utf8', (err, studentData) => {
                 if (err) {
                     reject("unable to load students"); return;
