@@ -17,6 +17,7 @@ module.exports.initialize = function () {
                 reject("unable to load courses"); return;
             }
 
+
             fs.readFile(studentsPath, 'utf8', (err, studentData) => {
                 if (err) {
                     reject("unable to load students"); return;
