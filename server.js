@@ -86,7 +86,7 @@ app.get("/students", (req, res) => {
     if (req.query.course) {
         collegeData.getStudentsByCourse(req.query.course)
             .then((students) => res.render("students", { students }))
-            .catch(() => res.render("students", { message: "no results" }));
+            .catch(() => res.render("students", { message: "no results found" }));
     } else {
         collegeData.getAllStudents()
             .then((students) => res.render("students", { students }))
